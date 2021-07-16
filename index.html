@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>パスワード自動生成</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1 class="title">パスワード自動生成ツール</h1>
+  <div class="pw-container">
+    <div class="pw-header">
+      <div class="pw" id="pw">
+        
+      </div>
+      <button id="copy">Copy</button>
+    </div>
+    
+    <div class="pw-body">
+      <div class="form-control">
+        <label for="len">
+          パスワードの文字数
+        </label>
+        <input value="8" type="number" id="len" min="4" max="40" />
+      </div>
+      <div class="form-control">
+        <label for="upper">
+          大文字
+        </label>
+        <input type="checkbox" id="upper" />
+      </div>
+      <div class="form-control">
+        <label for="lower">
+          小文字
+        </label>
+        <input type="checkbox" id="lower" />
+      </div>
+      <div class="form-control">
+        <label for="number">
+          数字
+        </label>
+        <input type="checkbox" id="number" />
+      </div>
+      <div class="form-control">
+        <label for="symbol">
+          特殊文字
+        </label>
+        <input type="checkbox" id="symbol" />
+      </div>
+      <button class="generate" id="generate">
+        パスワードを作成
+      </button>
+    </div>
+  </div>
+</body>
+</html>
